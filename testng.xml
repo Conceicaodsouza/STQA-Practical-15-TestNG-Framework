@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="STQA Practical 15 Suite">
+
+    <listeners>
+        <listener class-name="practical.TestResultListener"/>
+    </listeners>
+
+    <test name="All TestNG Tests">
+        <classes>
+            <class name="practical.TestNGLoginTest"/>
+        </classes>
+    </test>
+
+</suite>
