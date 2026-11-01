@@ -60,10 +60,8 @@ public class TestNGLoginTest {
     }
 
     @Test(priority = 4, groups = {"smoke", "regression"})
-    public void verifySuccessfulLogin() {
-        driver.findElement(By.id("username")).sendKeys("student");
-        driver.findElement(By.id("password")).sendKeys("test123");
-        driver.findElement(By.id("loginButton")).click();
+   
+    //STUDENT TASK 1. WRITE CODE HERE
 
         Assert.assertEquals(
                 driver.findElement(By.id("message")).getText(),
@@ -72,10 +70,8 @@ public class TestNGLoginTest {
     }
 
     @Test(priority = 5, groups = {"regression"})
-    public void verifyInvalidLogin() {
-        driver.findElement(By.id("username")).sendKeys("wronguser");
-        driver.findElement(By.id("password")).sendKeys("wrongpass");
-        driver.findElement(By.id("loginButton")).click();
+
+         //STUDENT TASK 2. WRITE CODE HERE
 
         Assert.assertEquals(
                 driver.findElement(By.id("message")).getText(),
